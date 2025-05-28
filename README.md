@@ -1,16 +1,27 @@
-# todo_app
+# Todo App
 
-A new Flutter project.
+Простое Flutter-приложение для управления задачами, созданное в рамках домашнего задания. Приложение позволяет добавлять, просматривать, редактировать и удалять задачи с использованием `ListView.builder`, `TextField` и `StatefulWidget`.
 
-## Getting Started
+## Функциональность
+- **Добавление задач**: Ввод задачи через текстовое поле с поддержкой русской кодировки и нажатие кнопки "Добавить" или клавиши Enter.
+- **Просмотр**: Список задач отображается динамически с помощью `ListView.builder` в карточках (`Card`).
+- **Редактирование**: Изменение задач через диалоговое окно с проверкой на пустой ввод.
+- **Удаление**: Удаление задач с уведомлением через `SnackBar`.
+- **Интерфейс**: Адаптивный дизайн с поддержкой тёмного и светлого режимов, локализацией для русского языка и информативными уведомлениями.
 
-This project is a starting point for a Flutter application.
+## Структура проекта
+- `lib/main.dart`: Основной код приложения, содержащий логику интерфейса и CRUD-операции.
+- `android/`, `ios/`: Платформо-зависимые конфигурации.
+- `pubspec.yaml`: Зависимости проекта, включая `flutter_localizations` и `cupertino_icons`.
+- `assets/`: Папка для ресурсов (не используется в текущей версии).
 
-A few resources to get you started if this is your first Flutter project:
+## Технические особенности
+- Кроссплатформенность (Android, iOS).
+- Поддержка русской локализации.
+- Адаптивный дизайн с тёмным режимом.
+- Обработка ошибок ввода через `SnackBar`.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Начало работы
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/SergeyAleks00/todo_app.git
